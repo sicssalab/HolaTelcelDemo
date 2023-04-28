@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "Jorge Saurina",
+      "phone": "9981229814",
+      "password": "123456",
+      "email": "saurina@outlook.com",
+      "age": 34
+    }
+  ]
+}

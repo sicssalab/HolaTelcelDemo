@@ -1,0 +1,77 @@
+{
+  "displayName": "Social App Demo - Hol@ Telcel",
+  "expo": {
+    "name": "Social App - Demo",
+    "description": "Social App Demo - Hol@ Telcel",
+    "scheme": "social-app",
+    "slug": "social-app-demo",
+    "icon": "./src/assets/favicon.png",
+    "orientation": "default",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#18191A",
+      "translucent": true
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "splash": {
+      "image": "./src/assets/images/splash@3x.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#18191A",
+      "mdpi": "./src/assets/images/splash.png",
+      "xhdpi": "./src/assets/images/splash@2x.png",
+      "xxhdpi": "./src/assets/images/splash@3x.png"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "mx.psadigital.social"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f5df4d"
+      },
+      "package": "mx.psadigital.social",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "06889954-fc70-4de7-9cc2-5f2683685645"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "owner": "suanhero"
+  }
+}
