@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
-import { StyleSheet, Dimensions } from 'react-native';
-import { PanGestureHandler, State } from 'react-native-gesture-handler';
-
+import { Dimensions } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import {
   CardStyleInterpolators,
   createStackNavigator,
@@ -20,12 +17,6 @@ import MagicTownsIconActive from '~assets/icons/menu/magictowns-active.svg';
 import MagicTownsIcon from '~assets/icons/menu/magictowns.svg';
 import MenuProfileIconActive from '~assets/icons/menu/menu-active.svg';
 import MenuProfileIcon from '~assets/icons/menu/menu.svg';
-import Logo from '~images/Logo.svg';
-import LogoActive from '~images/LogoActive.svg';
-import Messages from '~images/Messages.svg';
-import MessagesActive from '~images/MessagesActive.svg';
-import Profile from '~images/User.svg';
-import ProfileActive from '~images/UserActive.svg';
 import { SceneName } from '~src/@types/SceneName';
 import { RootStackParamList } from '~src/@types/react-navigation.d';
 import AvenuesView from '~views/Avenues';
@@ -33,9 +24,6 @@ import EditProfileView from '~views/EditProfile';
 import EntertainmentView from '~views/Entertainment';
 import ExperienceView from '~views/Experience';
 import MagicTownsView from '~views/MagicTowns';
-import MessagesView from '~views/Messages';
-import SwipeView from '~views/Swipe';
-
 import Navbar from '../components/Navbar';
 import TopHeader from '../components/TopHeader';
 import Authentication from './Authentication';
@@ -45,52 +33,13 @@ import OneTimeCode from './OneTimeCode';
 import Registration from './Registration';
 import Story from './Story';
 import UserProfile from './UserProfile';
-import ProfileScreen from './ProfileScreen';
+import ProfileScreen from './ProfileScreen/ProfileScreen';
 import ModalView from './ModalView';
+import GroupSectionScreen from './GroupSectionScreen/GroupSectionScreen';
 
 const Tab = createMaterialTopTabNavigator<RootStackParamList>();
 const Stack = createStackNavigator<RootStackParamList>();
-
 const screenWidth = Dimensions.get('window').width;
-
-function GestureHandlerWrapper({ children, navigation }) {
-  const [lastTranslationX, setLastTranslationX] = useState(0);
-
-  const onGestureEvent = ({ nativeEvent }) => {
-    const { translationX } = nativeEvent;
-    setLastTranslationX(translationX);
-  };
-
-  const onHandlerStateChange = ({ nativeEvent }) => {
-    const { state } = nativeEvent;
-
-    if (state === State.END) {
-      if (lastTranslationX > 100) {
-        navigation.navigate('First');
-      } else if (lastTranslationX < -100) {
-        navigation.navigate('Second');
-      }
-    }
-  };
-
-  return (
-    <PanGestureHandler
-      onGestureEvent={onGestureEvent}
-      onHandlerStateChange={onHandlerStateChange}
-      minDist={50}
-      activeOffsetX={[-50, 50]}>
-      <View style={styles.container}>{children}</View>
-    </PanGestureHandler>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 const Tabs = () => {
   const themeContext = useContext(ThemeContext);
@@ -105,14 +54,15 @@ const Tabs = () => {
           tabBarInactiveTintColor: themeContext.colors.text,
         }}
         initialRouteName={SceneName.Authentication}
-        springConfig={{
-          stiffness: 2000,
-          damping: 1000,
-          mass: 5,
-          overshootClamping: true,
-          restDisplacementThreshold: 0.05,
-          restSpeedThreshold: 0.05,
-        }}>
+        // springConfig={{
+        //   stiffness: 2000,
+        //   damping: 1000,
+        //   mass: 5,
+        //   overshootClamping: true,
+        //   restDisplacementThreshold: 0.05,
+        //   restSpeedThreshold: 0.05,
+        // }}
+        >
         <Tab.Screen
           name={SceneName.Entertainment}
           options={{
@@ -123,10 +73,10 @@ const Tabs = () => {
                 <EntertainmentIcon fill={color} />
               ),
           }}
-          navigationOptions={{
-            headerLeft: null,
-            headerTitle: 'Tab 1 Screen',
-          }}
+          // navigationOptions={{
+          //   headerLeft: null,
+          //   headerTitle: 'Tab 1 Screen',
+          // }}
           component={EntertainmentView}
         />
         <Tab.Screen
@@ -189,7 +139,7 @@ function Router() {
         headerBackTitle: 'Volver',
         headerTitleAlign: 'center',
         headerStyle: {
-          backgroundColor: theme.colors.headerBackground,
+          //backgroundColor: theme.colors.headerBackground,
         },
         headerTitleStyle: {
           fontFamily: theme.typography.fontFamily.bold,
@@ -214,6 +164,7 @@ function Router() {
         <Stack.Screen name={SceneName.Chat} component={Chat} />
         <Stack.Screen name={SceneName.Story} component={Story} />
         <Stack.Screen name={SceneName.ProfileScreen} component={ProfileScreen} />
+        <Stack.Screen name={SceneName.GroupProfile} component={GroupSectionScreen} />
         <Stack.Screen name={SceneName.ModalView} component={ModalView} />
 
       </Stack.Group>

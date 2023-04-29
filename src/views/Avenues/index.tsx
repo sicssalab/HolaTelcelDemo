@@ -1,36 +1,26 @@
 import React, { useContext, useState, useEffect } from 'react';
 import {
-  KeyboardAvoidingView,
-  Text,
   SectionList,
-  ScrollView,
-  FlatList,
   View,
 } from 'react-native';
-
 import { useNavigation } from '@react-navigation/native';
 import { ThemeContext } from 'styled-components/native';
 import { SafeComponent } from '~components';
 import Divider from '~components/Divider';
 import { SceneName } from '~src/@types/SceneName';
-
 import { mockRequest } from './__mocks__';
 import AvenueDropdown from './components/AvenueDropdown';
 import { Header } from './components/Header';
 import { Input } from './components/Input';
-import { Location } from './components/Location';
-import { Posts } from './components/Posts';
-import { PICTURE_SIZE } from './components/Posts/styles';
+import GlobalPost from './components/GlobalPost';
 import StateDropdown from './components/StateDropdown';
 import data from './data.json';
 import { Container, OptionsContainer } from './styles';
+import typeMockConstants from '~src/constants/typeMockConstants';
 
 function Component() {
-  const themeContext = useContext(ThemeContext);
   const navigation = useNavigation();
-
   const [selectedStateId, setSelectedStateId] = useState(null);
-  const [selectedAvenueId, setSelectedAvenueId] = useState(null);
   const [keyword, setKeyword] = useState('');
   const [filteredAvenues, setFilteredAvenues] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
@@ -39,7 +29,6 @@ function Component() {
     code: state.id,
     name: state.name,
   }));
-  const allAvenues = data.states.flatMap((state) => state.avenues);
 
   const updateFilteredAvenuesAndPosts = (stateId: string, avenueId: string) => {
     setFilteredPosts([]);
@@ -60,7 +49,14 @@ function Component() {
       setFilteredPosts([]);
     }
   };
-
+  const onNavigateClick = (item) => {
+    const profilePage = {
+      id: item.id,
+      type: "AVENUES_PROFILE"
+      //type: "typeMockConstants.AVENUES_PROFILE"
+    }
+    navigation.navigate(SceneName.ProfileScreen, { profilePage });
+  };
   const sections = [
     {
       title: 'Header',
@@ -104,7 +100,8 @@ function Component() {
       title: 'Posts',
       data: filteredPosts,
       key: 'posts',
-      renderItem: ({ item }) => <Posts item={item} />,
+      //renderItem: ({ item }) => <Posts item={item} />,
+      renderItem: ({ item }) => <GlobalPost item={item} onNavigateClick={() => onNavigateClick(item)} />,
     },
   ];
 

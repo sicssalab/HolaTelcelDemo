@@ -19,6 +19,9 @@
               "name": "Petco",
               "description": "Los mejores conductores usan LLantas Pirelli",
               "likes": 367,
+              "address": "Lorem ipsum la Lorem ipsum Lorem ipsum",
+              "stars": 5,
+              "hasActiveStreaming": true,
               "videos": [
                 "https://social-network.sicssa-lab.com/assets/mocks/5-Animal-Cool/grupo/1-petco/1.mp4",
                 "https://social-network.sicssa-lab.com/assets/mocks/5-Animal-Cool/grupo/1-petco/2.mp4",
@@ -1115,6 +1118,7 @@
               "createDate": "1d",
               "name": "Los meros de Jalisco",
               "servicio": "restaurant",
+              "hasPremium": true,
               "description": "Hola, Como estan amigos? Gracias por todo su apoyo en la carrera de hoy.",
               "likes": 367,
               "videos": [
@@ -1337,6 +1341,7 @@
               "picture": "https://social-network.sicssa-lab.com/assets/mocks/5-Animal-Cool/grupo/1-petco/Avatar.jpeg",
               "createDate": "3min",
               "name": "Coco bongo",
+              "hasPremium": true,
               "description": "tips, consejos de cuidado para prevenir enfermedades a tu mascota",
               "likes": 367,
               "videos": [

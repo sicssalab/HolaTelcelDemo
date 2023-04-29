@@ -14,7 +14,7 @@ import {
 import { Video, ResizeMode } from 'expo-av';
 import { height, width } from '~constants';
 
-const VideoStream = ({videoData}) => {
+const VideoStream = ({videoData, autoPlay}) => {
   const video = videoData;
   const videoRef = useRef(null);
   
@@ -34,11 +34,13 @@ const VideoStream = ({videoData}) => {
       resizeMode={ResizeMode.COVER}
       onBuffer={onBuffer}
       onError={onError}
-      shouldPlay= {false}//{autoPlay}
+      shouldPlay= {autoPlay}
       style={{ height: video.height ? video.height : 350, width: video.width ? video.width : '100%' }}
     />
   );
  
 };
-
+VideoStream.defaultProps = {
+  autoPlay: false
+}
 export default VideoStream;

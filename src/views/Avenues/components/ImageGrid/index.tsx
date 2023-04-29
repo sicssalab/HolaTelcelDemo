@@ -11,6 +11,7 @@ import {
 
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { Video, AVPlaybackStatus } from 'expo-av';
+import ModalPost from '../ModalPost';
 
 type Props = {
   images: string[];
@@ -18,12 +19,13 @@ type Props = {
   onProfileButtonPress: () => void;
 };
 
-const ImageGrid = ({ images, onImagePress, onProfileButtonPress }) => {
+const ImageGrid = ({ images, onImagePress, onProfileButtonPress, onShowModal }) => {
   const [playingVideo, setPlayingVideo] = useState<number | null>(null);
   const [modalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
     setModalVisible(!modalVisible);
+    onShowModal && onShowModal();
   };
 
   let gallery = images.slice();
@@ -93,7 +95,7 @@ const ImageGrid = ({ images, onImagePress, onProfileButtonPress }) => {
           );
         }
       })}
-      <Modal
+      {/* <Modal
         animationType='slide'
         transparent={false}
         visible={modalVisible}
@@ -116,7 +118,7 @@ const ImageGrid = ({ images, onImagePress, onProfileButtonPress }) => {
                         ref={videoRefs.current[index]}
                         source={{ uri: item.uri }}
                         style={styles.modalVideo}
-                        resizeMode='cover'
+                        resizeMode='cover' //TODO dimencion video story
                         onPlaybackStatusUpdate={(status) =>
                           handlePlaybackStatusUpdate(index, status)
                         }
@@ -144,12 +146,18 @@ const ImageGrid = ({ images, onImagePress, onProfileButtonPress }) => {
             <Text style={styles.profileButtonText}>Ir al perfil</Text>
           </TouchableOpacity>
         </View>
-      </Modal>
+      </Modal> */}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  modalMediaContainer: {
+
+  },
+  modalVideoTouchable: {
+
+  },
   imageContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',

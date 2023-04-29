@@ -3,9 +3,8 @@ import { Text } from '~components';
 import { useNavigation } from '@react-navigation/native';
 import { Container, Picture, Content } from './styles';
 import { SceneName } from '~src/@types/SceneName';
-import { User } from '~src/@types/User';
 
-export const Preview = ({ item, index }) => {
+export const Preview = ({ item }) => {
   const navigation = useNavigation();
   
   return (

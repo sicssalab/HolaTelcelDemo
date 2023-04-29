@@ -12,26 +12,18 @@ const{ height, width } = Dimensions.get('window');
 
 export const StoryFeed = (props) => {
   const {item: itemPreview} = props;
-
   const navigation = useNavigation();
-
   const [currIndex, setIndex] = useState(0);
- 
-  const renderItem = ({item, index }) => {
 
+  const renderItem = ({item, index }) => {
     return(
       <View style={{ flex: 1, width: width }}>
-
         <PlayerFeed videoParams={ { url : item.srcStory, isPlay : currIndex === index } } />
-
         <LinearGradient 
           colors={['rgba(0,0,0,0.1)',' rgba(0,0,0,0.6)']}
           style={ styles.bottomView }>
-
           <ReactionsBar item={ item }/>
-
         </LinearGradient>
-
       </View>
     )
   }
@@ -46,6 +38,7 @@ export const StoryFeed = (props) => {
 
   const returnIndex = () => {
     const response = mockRequest.data.findIndex((item,index) => item.id === itemPreview.id);
+    console.log(response, "index video")
     setIndex(response ? response : 0)
   }
 

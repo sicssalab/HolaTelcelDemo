@@ -15,7 +15,7 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 // import VideoThumb from './components/VideoThumb';
 import * as VideoThumbnails from 'expo-video-thumbnails';
 
-const MediaGrid = ({ array, onMediaPress, onProfileButtonPress }) => {
+const MediaGrid = ({ array, onMediaPress, itemView }) => {
   const [loading, setLoading] = useState(true);
   const [media, setMedia] = useState([]);
   const [playingVideo, setPlayingVideo] = useState<number | null>(null);
@@ -76,18 +76,7 @@ const MediaGrid = ({ array, onMediaPress, onProfileButtonPress }) => {
 
   const handlePlayIconPress = async (index: number) => {
     try {
-      const videoRef = videoRefs.current[index]?.current;
-
-      if (videoRef) {
-        const status = await videoRef.getStatusAsync();
-        if (status.isPlaying) {
-          await videoRef.pauseAsync();
-        } else {
-          await videoRef.playAsync();
-        }
-      } else {
-        console.warn('Video ref no está definido para el índice:', index);
-      }
+      onMediaPress && onMediaPress();
     } catch (error) {
       console.error('Error al manejar la reproducción del video:', error);
     }
@@ -123,6 +112,22 @@ const MediaGrid = ({ array, onMediaPress, onProfileButtonPress }) => {
                   style={styles.bigResourceContainer}
                   onPress={() => handlePlayIconPress(index)}>
                   <View style={styles.bigResource}>
+                    {(itemView && itemView.hasActiveStreaming) && (
+                      <View style={{
+                        top: 45,
+                        left:15,
+                        zIndex: 1
+                      }}>
+                        <Image
+                          source={require('~assets/images/envivo.gif')}
+                          style={{
+                            width: 75,
+                            height: 40,
+                            resizeMode: 'contain',
+                          }}
+                        />
+                      </View>
+                    )}
                     <Video
                       ref={videoRefs.current[index]}
                       source={{ uri: resource.uri }}
@@ -155,7 +160,7 @@ const MediaGrid = ({ array, onMediaPress, onProfileButtonPress }) => {
                     styles.smallResourceContainer,
                     index === 1 && styles.marginRight,
                   ]}
-                  onPress={toggleModal}>
+                  onPress={() => handlePlayIconPress(index)}>
                   <Image
                     style={[
                       styles.smallResource,

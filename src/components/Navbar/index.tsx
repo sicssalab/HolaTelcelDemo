@@ -1,12 +1,8 @@
 import React, { useContext } from 'react';
 import { Dimensions } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
 import { MaterialTopTabBarProps } from '@react-navigation/material-top-tabs';
 import { ThemeContext } from 'styled-components';
-
 import { Container, Tabs, Tab, Indicator } from './styles';
-
 const NAVBAR_HEIGHT = 68;
 const screenWidth = Dimensions.get('window').width;
 
@@ -25,7 +21,6 @@ function Navbar({
   position,
 }: MaterialTopTabBarProps) {
   const style = useNavbarStyle();
-  const themeContext = useContext(ThemeContext);
 
   // Translate the indicator to the middle of the tab
   const tabWidth = screenWidth / state.routes.length;

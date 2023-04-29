@@ -16,6 +16,6 @@ export enum SceneName {
   ProfileScreen="ProfileScreen",
   Messages = "Messages",
   Profile = "Profile",
-  ModalView = "ModalView"
-
+  ModalView = "ModalView",
+  GroupProfile = "GroupProfile",
 }
