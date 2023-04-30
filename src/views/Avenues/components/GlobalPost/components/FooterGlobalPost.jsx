@@ -15,11 +15,9 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
 //import { Video, AVPlaybackStatus } from 'expo-av';
 import { SceneName } from '~src/@types/SceneName';
-
+import ConciergeButton from './ConciergeButton';
 import ModalComments from '../ModalComments';
 import LikeButton from './LikeButton';
-import ShareButton from './ShareButton';
-import ImgPathImage from '~components/ImagePath/ImgPathImage';
 
 const FooterGlobalPost = (props) => {
   const { item } = props;
@@ -63,11 +61,6 @@ const FooterGlobalPost = (props) => {
             reactionsCount={reactionsCount}
             onLikePress={handleLikePress}
           />
-          {/* <CommentButton
-                isVisivble={isCommentModalVisible}
-                commentsCount={commentsCount}
-                onCommentPress={handleCommentPress}
-            /> */}
           <TouchableOpacity
             style={styles.iconButton}
             onPress={handleCommentPress}>
@@ -82,23 +75,7 @@ const FooterGlobalPost = (props) => {
             )}
             <Text style={styles.reactionText}>Comentarios</Text>
           </TouchableOpacity>
-          {/* <ShareButton
-            item={item}
-            shared={shared}
-            sharedCount={sharedCount}
-            onSharedPress={handleSharePress}
-          /> */}
-          <TouchableOpacity
-            style={styles.actionSection}
-            onPress={async () => {
-              Linking.openURL('tel:+529982423611');
-            }}>
-            <Image
-              source={ImgPathImage.icCall}
-              style={{ tintColor: 'gray', height: 20, width: 20 }}
-            />
-            <Text style={styles.reactionText}>Concierge</Text>
-          </TouchableOpacity>
+          <ConciergeButton />
         </View>
       </View>
       <ModalComments

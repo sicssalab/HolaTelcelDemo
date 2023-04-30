@@ -10,6 +10,12 @@ const AvenueDropdown = ({ stateId, onUpdate, filteredAvenues = [] }) => {
     setSelectedAvenue(value);
   };
 
+  // useEffect(() => {
+  //   setSelectedAvenue(null)
+  //   onValueChange(null);
+  //   console.log("que no entra?")
+  // },[stateId]);
+
   const mappedAvenues = filteredAvenues.map((avenue) => ({
     code: avenue.id,
     name: avenue.name,

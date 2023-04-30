@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import {
   Image,
 } from 'react-native';
@@ -11,6 +11,7 @@ import RadioIcon from '~assets/icons/stream/podcasts.svg';
 import SearchIcon from '~assets/icons/general/search.svg';
 import { SceneName } from '~src/@types/SceneName';
 import { Container, SearchIconWrapper, LogoWrapper, LeftSide, RightSide } from './styles';
+import ModalRadio from '~components/ModalRadio/ModalRadio';
 
 const TOP_HEIGHT = 60;
 
@@ -31,6 +32,11 @@ function TopHeader() {
   const backToHome = useCallback(() => {
     navigation.navigate(SceneName.Home, { screen: SceneName.Entertainment });
   }, []);
+  const [showModal, setShowModal] = useState(false);
+
+  const onShowModal = () => {
+    setShowModal(!showModal);
+  };
 
   return (
     <Container style={[style]}>
@@ -51,10 +57,14 @@ function TopHeader() {
         <SearchIconWrapper>
           <SearchIcon fill={themeContext.colors.text} />
         </SearchIconWrapper>
-        <TouchableOpacity activeOpacity={1} onPress={backToHome}>
+        <TouchableOpacity activeOpacity={1} onPress={onShowModal}>
           <RadioIcon fill={themeContext.colors.text} />
         </TouchableOpacity>
       </RightSide>
+      <ModalRadio 
+        onClose={onShowModal}
+        modalVisible={showModal}
+      />
     </Container>
   );
 }

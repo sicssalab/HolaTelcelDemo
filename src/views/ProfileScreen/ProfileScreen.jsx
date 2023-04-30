@@ -151,9 +151,16 @@ const ProfileScreen = (props) => {
                 <Text style={styles.userInfoSubTitle}>Publicaciones</Text>
               </View>
               <View style={styles.userInfoItem}>
-                {/* <Text style={styles.userInfoTitle}>
-                  {itemView.information.members}
-                </Text> */}
+                {(itemView.information && itemView.information.members) && (
+                  <Text style={styles.userInfoTitle}>
+                    {itemView.information.members}
+                  </Text>
+                )}
+                {(itemView.members) && (
+                  <Text style={styles.userInfoTitle}>
+                    {itemView.members}
+                  </Text>
+                )}
                 <Text style={styles.userInfoSubTitle}>Miembros</Text>
               </View>
               <View style={styles.userInfoItem}>

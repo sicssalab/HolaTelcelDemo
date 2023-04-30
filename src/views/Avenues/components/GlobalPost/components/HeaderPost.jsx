@@ -9,9 +9,16 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import ModalOptions from './ModalOptions';
+import { useState } from 'react';
 
 const HeaderPost = (props) => {
   const { item, hasSandWith } = props;
+  const [showModal, setShowModal] = useState(false);
+
+  const onShowModal = () => {
+    setShowModal(!showModal);
+  };
 
   const onNavigateClick = () => {
     const {onNavigateClick} = props;
@@ -39,10 +46,15 @@ const HeaderPost = (props) => {
         </View>
       )} */}
       {hasSandWith && (
-        <TouchableOpacity style={styles.icon}>
+        <TouchableOpacity style={styles.icon} onPress={onShowModal}>
             <Icon name='dots-vertical' size={20} color='#999' />
         </TouchableOpacity>
       )}
+      <ModalOptions 
+        item={item}
+        modalVisible={showModal}
+        onClose={onShowModal}
+      />
     </View>
   );
 };

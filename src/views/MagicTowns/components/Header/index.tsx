@@ -8,7 +8,7 @@ export const Header = () => {
       <Title>
         <Text fontSize='h3' fontWeight='bold'>Pueblos Mágicos</Text>
       </Title>
-      <Text style={{textAlign: "center", marginBottom: 20}}>Actualmente existe 32 pueblos mágicos listados a continuación en orden alfabetico</Text>
+      <Text style={{textAlign: "center", marginBottom: 20}}>Actualmente existe 132 pueblos mágicos listados a continuación en orden alfabetico</Text>
     </Container>
   );
 };

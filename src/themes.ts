@@ -58,7 +58,7 @@ export const DarkTheme: DefaultThemeProps = {
   colors: {
     primary: "#f5df4d",
     text: "#f2f2f2",
-    black: "#000",
+    black: "#000", //TODO no existe dentro de la gama de colores
     grey: "#bbb",
     background: "#111001",
     secondaryBackground: "#22252e",
