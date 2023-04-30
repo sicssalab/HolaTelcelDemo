@@ -48,49 +48,15 @@ const ModalPost = (props) => {
             onNavigateClick={onNavigateClick}
           />
           <DescriptionPost post={post} />
+          <ScrollView style={{ width: '100%' }}>
           {post.hasActiveStreaming && (
             <View style={{left:15, width: "100%"}}>
               <Image
                 source={require('~assets/images/envivo.gif')}
-                style={{ width: 75, height: 40, resizeMode: 'contain' }}
+                style={{ width: 75, height: 40, resizeMode: 'contain', marginBottom: 10}}
               />
             </View>
           )}
-          <ScrollView style={{ width: '100%' }}>
-            {/* {media.map((item, index) => (
-                <View key={index} style={styles.modalMediaContainer}>
-                {item.type === 'image' ? (
-                    <Image style={styles.modalImage} source={{ uri: item.uri }} />
-                ) : (
-                    <View>
-                    <TouchableOpacity
-                        style={styles.modalVideoTouchable}
-                        onPress={() => handlePlayIconPress(index)}>
-                        <Video
-                        ref={videoRefs.current[index]}
-                        source={{ uri: item.uri }}
-                        style={styles.modalVideo}
-                        resizeMode={ResizeMode.COVER}
-                        onPlaybackStatusUpdate={(status) =>
-                            handlePlaybackStatusUpdate(index, status)
-                        }
-                        />
-                    </TouchableOpacity>
-                    {playingVideo !== index && (
-                        <TouchableOpacity
-                        style={styles.playIconContainer}
-                        onPress={() => handlePlayIconPress(index)}>
-                        <MaterialIcons
-                            name='play-circle-outline'
-                            size={64}
-                            color='white'
-                        />
-                        </TouchableOpacity>
-                    )}
-                    </View>
-                )}
-                </View>
-            ))} */}
             {post.videos &&
               post.videos.map((videoplay, index) => (
                 <View key={videoplay.id || index}>

@@ -4,7 +4,6 @@ import {
   View,
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { ThemeContext } from 'styled-components/native';
 import { SafeComponent } from '~components';
 import Divider from '~components/Divider';
 import { SceneName } from '~src/@types/SceneName';
@@ -16,7 +15,6 @@ import GlobalPost from './components/GlobalPost';
 import StateDropdown from './components/StateDropdown';
 import data from './data.json';
 import { Container, OptionsContainer } from './styles';
-import typeMockConstants from '~src/constants/typeMockConstants';
 
 function Component() {
   const navigation = useNavigation();
@@ -30,7 +28,7 @@ function Component() {
     name: state.name,
   }));
 
-  const updateFilteredAvenuesAndPosts = (stateId: string, avenueId: string) => {
+  const updateFilteredAvenuesAndPosts = (stateId: number, avenueId: string) => {
     setFilteredPosts([]);
     setSelectedStateId(stateId);
 

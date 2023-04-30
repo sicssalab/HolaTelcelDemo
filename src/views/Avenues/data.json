@@ -1098,6 +1098,18 @@
             }
           ]
         }
+      ],
+      "services" : [
+        {
+          "id": 1,
+          "code": "lugar",
+          "name": "Lugares"
+        },
+        {
+          "id": 2,
+          "code": "hotel",
+          "name": "Hoteles"
+        }        
       ]
     },
     {
@@ -2198,6 +2210,23 @@
               ]
             }
           ]
+        }
+      ],
+      "services" : [
+        {
+          "id": 1,
+          "code": "lugar",
+          "name": "Lugares"
+        },
+        {
+          "id": 2,
+          "code": "hotel",
+          "name": "Hoteles"
+        },
+        {
+          "id": 3,
+          "code": "nautico",
+          "name": "Náuticos"
         }
       ]
     }

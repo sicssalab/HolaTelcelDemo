@@ -60,7 +60,6 @@ const GroupSectionScreen = (props) => {
           }}
           showsVerticalScrollIndicator={false}>
           <Image style={styles.profileCover} source={{ uri: itemView.profileCover }} />
-          {/* <Image style={styles.userImg} source={{ uri: itemView.picture }} /> */}
           <Text style={styles.userName}>{itemView.name}</Text>
           <Text style={styles.aboutUser}>
             {itemView.hasPremium ? 'Privado' : 'Publico'}

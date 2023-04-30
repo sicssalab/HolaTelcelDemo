@@ -6,18 +6,18 @@ import Divider from '~components/Divider';
 
 interface SelectProps {
   placeholder: string;
-  options: string[];
+  options: any[];
   onValueChange: (option: string) => void;
 }
 
 const Select: React.FC<SelectProps> = ({ placeholder, options, onValueChange }) => {
   const themeContext = useContext(ThemeContext);
-  const [showOptions, setShowOptions] = useState(false);
+  //const [showOptions, setShowOptions] = useState(false);
   const [selectedOption, setSelectedOption] = useState('');
 
   const handlePressOption = (value: string) => {
     setSelectedOption(value);
-    setShowOptions(true);
+    //setShowOptions(true);
     onValueChange(value);
   };
 
@@ -32,7 +32,7 @@ const Select: React.FC<SelectProps> = ({ placeholder, options, onValueChange }) 
       primaryColor={themeContext.colors.primary}
       dropdownStyle={{
         backgroundColor: themeContext.colors.text,
-        borderColor: themeContext.colors.black,
+        //borderColor: themeContext.colors.black,
         borderWidth: 1,
       }}
       dropdownContainerStyle={{
@@ -41,7 +41,7 @@ const Select: React.FC<SelectProps> = ({ placeholder, options, onValueChange }) 
         marginBottom: 5,
       }}
       placeholderStyle={{
-        color: themeContext.colors.black,
+        //color: themeContext.colors.black,
         fontSize: 16,
         marginBottom: 5,
         fontWeight: '400',
@@ -60,11 +60,11 @@ const Select: React.FC<SelectProps> = ({ placeholder, options, onValueChange }) 
         padding: 10,
       }}
       checkboxLabelStyle={{
-        color: themeContext.colors.black,
+        //color: themeContext.colors.black,
         fontSize: 18,
       }}
       listFooterComponent={
-        <Divider style={{ marginTop: 10, margingBottom: 10 }} />
+        <Divider style={{ marginTop: 10, marginBottom: 10 }} />
       }
     />
   );

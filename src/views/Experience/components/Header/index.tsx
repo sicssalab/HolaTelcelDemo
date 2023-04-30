@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <Container>
       <Title>
-        <Text fontSize='h3' fontWeight='bold'>Experiencias Turísticas</Text>
+        <Text fontSize='h3' fontWeight='bold'>Lugares de Experiencias</Text>
       </Title>
     </Container>
   );

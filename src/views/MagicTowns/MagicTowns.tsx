@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import {
   SectionList,
   View,
@@ -10,17 +10,24 @@ import { SceneName } from '~src/@types/SceneName';
 import { mockRequest } from './__mocks__';
 import { Header } from './components/Header';
 import GlobalPost from '~views/Avenues/components/GlobalPost/GlobalPost';
-import StateDropdown from '~views/Avenues/components/StateDropdown';
-import ServicesDropdown from "./components/ServicesDropdown";
+import { Input } from '~views/Avenues/components/Input';
+//import StateDropdown from '~views/Avenues/components/StateDropdown';
+//import ServicesDropdown from "./components/ServicesDropdown";
 import data from '~views/Avenues/data.json'; //TODO data son los estados nada mas
 import { Container, OptionsContainer } from '~views/Avenues/styles';
-import { mockServiciosExperiencia } from '~src/mocks/mockServiciosExperiencia';
+import { mockPueblosMagicos } from '~src/mocks/mockPueblosMagicos';
 
 function Component() {
   const navigation = useNavigation();
   const [selectedStateId, setSelectedStateId] = useState(null);
   const [filteredAvenues, setFilteredAvenues] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([]);
+  const [valueSearch, setValueSearch] = useState('');
+
+  useEffect(() => {
+    setFilteredPosts(mockPueblosMagicos.data.content)
+  }, []);
+
 
   const states = data.states.map((state) => ({
     code: state.id,
@@ -42,7 +49,7 @@ function Component() {
     //TODO Muesta la lista de servicios por la avenida seleccionada
     if (avenueId) {
       //TODO seleccionar todos los servicios de X estado
-      const services = mockServiciosExperiencia.data.filter((servicio) => servicio.state_id === stateId && servicio.service_id === avenueId)
+      const services = [];// mockServiciosExperiencia.data.filter((servicio) => servicio.state_id === stateId && servicio.service_id === avenueId)
       setFilteredPosts(services);
     } else {
       setFilteredPosts([]);
@@ -51,11 +58,26 @@ function Component() {
   const onNavigateClick = (item) => {
     const profilePage = {
       id: item.id,
-      type: "SERVICES_PROFILE"
-      //type: "typeMockConstants.AVENUES_PROFILE"
+      type: "MAGIC_TOWNS_PROFILE"
     }
     navigation.navigate(SceneName.ProfileScreen, { profilePage });
   };
+  const removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  } 
+  const onChangeInput = (e) => {
+    //TODO de la busqueda filtrar los que son con el nombre
+    setValueSearch(e);
+    if(e == "") setFilteredPosts(mockPueblosMagicos.data.content)
+    else
+      setFilteredPosts(
+        mockPueblosMagicos.data.content.filter((servicio) => 
+        //removeAccents(servicio.name.toUpperCase()) >= removeAccents(e.toUpperCase())
+        removeAccents(servicio.name.toLowerCase()).indexOf(removeAccents(e.toLowerCase())) >= 0
+        )
+      )
+  }
+
   const sections = [
     {
       title: 'Header',
@@ -75,17 +97,12 @@ function Component() {
       key: 'optionsContainer',
       renderItem: () => (
         <OptionsContainer>
-          <StateDropdown
-            states={states}
-            onUpdate={updateFilteredAvenuesAndPosts}
+          <Input
+            placeholder='Buscar'
+            value={valueSearch}
+            onChangeText={onChangeInput}
+            maxLength={500}
           />
-          {selectedStateId && (
-            <ServicesDropdown
-              stateId={selectedStateId}
-              onUpdate={updateFilteredAvenuesAndPosts}
-              filteredAvenues={filteredAvenues}
-            />
-          )}
         </OptionsContainer>
       ),
     },
@@ -93,7 +110,6 @@ function Component() {
       title: 'Posts',
       data: filteredPosts,
       key: 'posts',
-      //renderItem: ({ item }) => <Posts item={item} />,
       renderItem: ({ item }) => <GlobalPost item={item} onNavigateClick={() => onNavigateClick(item)} />,
     },
   ];

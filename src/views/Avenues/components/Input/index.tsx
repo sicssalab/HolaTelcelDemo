@@ -1,8 +1,5 @@
 import React from 'react';
-import { TextInputProps } from 'react-native';
 import { CancelIcon, CancelTouchArea, Content, TextInput } from './styles';
-import Text from '~components/Text';
-
 
 export const Input = ({ ...props }) => {
   return (

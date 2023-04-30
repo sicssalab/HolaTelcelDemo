@@ -23,7 +23,7 @@ import AvenuesView from '~views/Avenues';
 import EditProfileView from '~views/EditProfile';
 import EntertainmentView from '~views/Entertainment';
 import ExperienceView from '~views/Experience';
-import MagicTownsView from '~views/MagicTowns';
+import MagicTownsView from '~views/MagicTowns/MagicTowns';
 import Navbar from '../components/Navbar';
 import TopHeader from '../components/TopHeader';
 import Authentication from './Authentication';

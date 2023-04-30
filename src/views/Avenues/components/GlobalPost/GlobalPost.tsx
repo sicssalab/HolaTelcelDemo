@@ -9,11 +9,14 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import ModalPost from '../ModalPost/ModalPost';
-import DescriptionPost from './components/DescriptionPost';
-import HeaderPost from './components/HeaderPost';
-import FooterGlobalPost from './components/FooterGlobalPost';
+
 import MediaGrid from '../MediaGrid';
+import ModalPost from '../ModalPost/ModalPost';
+import StarPost from './StarPost';
+import DescriptionPost from './components/DescriptionPost';
+import FooterGlobalPost from './components/FooterGlobalPost';
+import HeaderPost from './components/HeaderPost';
+
 const GlobalPost = (props) => {
   const { item, hasbuttonLink } = props;
   const [showModal, setShowModal] = useState(false);
@@ -24,6 +27,7 @@ const GlobalPost = (props) => {
 
   const onNavigateClick = () => {
     const { onNavigateClick } = props;
+    onShowModal();
     onNavigateClick && onNavigateClick();
   };
 
@@ -32,18 +36,22 @@ const GlobalPost = (props) => {
       <HeaderPost item={item} onNavigateClick={onNavigateClick} />
       <View style={styles.body}>
         {item.address && (
-        <DescriptionPost post={{
-          description: "Dirección: " + item.address
-        }} onClick={onShowModal}/>
+          <DescriptionPost
+            post={{
+              description: 'Dirección: ' + item.address,
+            }}
+            onClick={onShowModal}
+          />
         )}
+        {item.stars && <StarPost stars={item.stars} />}
         {item.description && (
           <DescriptionPost post={item} isLineal onClick={onShowModal} />
         )}
         {item.videos && (
           <MediaGrid
-          array={item.videos}
-          itemView={item}
-          onMediaPress={onShowModal}
+            array={item.videos}
+            itemView={item}
+            onMediaPress={onShowModal}
           />
         )}
       </View>

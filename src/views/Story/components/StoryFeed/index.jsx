@@ -38,7 +38,6 @@ export const StoryFeed = (props) => {
 
   const returnIndex = () => {
     const response = mockRequest.data.findIndex((item,index) => item.id === itemPreview.id);
-    console.log(response, "index video")
     setIndex(response ? response : 0)
   }
 
