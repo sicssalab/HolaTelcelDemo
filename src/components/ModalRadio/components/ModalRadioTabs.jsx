@@ -33,10 +33,12 @@ const ModalRadioTabs = (props) => {
   const contentMusicPlay = () => <RadioContent onClick={(response) => onPressPlayMusicItem("music", response)} items={mockEstaciones.music.data} />
 
   const onClickTab = (i) => {
+    const {onClickTab} = props;
     setStateRadio({
         ...stateRadio,
         index: i,
     })
+    onClickTab && onClickTab();
   };
 
   const renderTabBar = (props) => {
@@ -82,6 +84,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: StatusBar.currentHeight,
     width: "100%",
+    borderBottomColor: "gold",
+    borderBottomWidth: 1,
   },
   tabItem: {
     flex: 1,

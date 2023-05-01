@@ -19,7 +19,7 @@ const RadioContent = (props) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: '#ff4081',
+        //backgroundColor: '#ff4081',
       }}>
       {items &&
         items.map((item, i) => {

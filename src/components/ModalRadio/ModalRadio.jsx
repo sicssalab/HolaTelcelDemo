@@ -18,7 +18,7 @@ import ModalRadioTabs from './components/ModalRadioTabs';
 import RadioPlayComponent from './components/RadioPlayComponent';
 
 const ModalRadio = (props) => {
-  const { modalVisible } = props;
+  const { modalVisible, Loading, Loaded, playMusic } = props;
 
   //TODO por default toma a radio como inicia
   const [streamPlayTab, setStreamPlayTab] = useState(null);
@@ -50,6 +50,16 @@ const ModalRadio = (props) => {
     }    
   };
 
+  
+  const PlayAudio = () => {
+    const {onPlayAudio} = props;
+    onPlayAudio && onPlayAudio();
+  }
+  const PauseAudio = () => {
+    const {onPauseAudio} = props;
+    onPauseAudio && onPauseAudio();
+  }
+
   return (
     <Modal
       animationType='slide'
@@ -65,9 +75,16 @@ const ModalRadio = (props) => {
             <View style={styles.contentHeader}>
               <Text style={styles.header}>Estaciones</Text>
             </View>
-            <ModalRadioTabs onPressPlayMusicItem={onPressPlayMusicItem} />
+            <ModalRadioTabs onPressPlayMusicItem={onPressPlayMusicItem} onClickTab={PauseAudio} />
           </View>
-          {streamPlayTab && <RadioPlayComponent musicON={musicON} stacion={streamPlayTab} />}
+          {streamPlayTab && <RadioPlayComponent 
+          musicON={musicON} stacion={streamPlayTab}
+            onPlayAudio={PlayAudio}
+            onPauseAudio={PauseAudio}
+            Loading={Loading}
+            Loaded={Loaded}
+            playMusic={playMusic}
+          />}
 
           {/* <ScrollView style={{ width: '100%' }}>
             <Text>Contenido de la radio</Text>

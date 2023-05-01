@@ -19,92 +19,99 @@ import PauseIcon from '~assets/icons/pause.svg';
 import PlayIcon from '~assets/icons/play_arrow.svg';
 
 const RadioPlayComponent = (props) => {
-  const { stacion, musicON } = props;
+  const { stacion, musicON, Loading, Loaded, playMusic } = props;
   const themeContext = useContext(ThemeContext);
+//   const [Loaded, SetLoaded] = React.useState(false);
+//   const [Loading, SetLoading] = React.useState(false);
+  const sound = React.useRef(new Audio.Sound());
 
-  const [Loaded, SetLoaded] = React.useState(false);
-  const [Loading, SetLoading] = React.useState(false);
-  let sound = React.useRef(new Audio.Sound());
 
-  React.useEffect(() => {
-      console.log(musicON, 'carga la info del audio');
-    LoadAudio();
-    //PlayAudio(); TODO no se puede asi porque es async
-  }, [musicON]);
+//   const PlayAudio = async () => {
+//     //await sound.playAsync();
+//     try {
+//       const result = await sound.current.getStatusAsync();
+//       console.log(result);
+//       if (result.isLoaded) {
+//         if (result.isPlaying === false) {
+//           sound.current.playAsync();
+//         }
+//       }
+//     } catch (error) {
+//       console.log(error, 'func play audio');
+//     }
+//   };
 
-  const PlayAudio = async () => {
-    try {
-      const result = await sound.current.getStatusAsync();
-      console.log(result)
-      if (result.isLoaded) {
-        if (result.isPlaying === false) {
-          sound.current.playAsync();
-        }
-      }
-    } catch (error) {
-      console.log(error, 'func play audio');
-    }
-  };
+//   const PauseAudio = async () => {
+//     try {
+//       const result = await sound.current.getStatusAsync();
+//       if (result.isLoaded) {
+//         if (result.isPlaying === true) {
+//           sound.current.pauseAsync();
+//         }
+//       }
+//     } catch (error) {
+//       console.error(error, 'func pasuse audio');
+//     }
+//   };
 
-  const PauseAudio = async () => {
-    try {
-      const result = await sound.current.getStatusAsync();
-      if (result.isLoaded) {
-        if (result.isPlaying === true) {
-          sound.current.pauseAsync();
-        }
-      }
-    } catch (error) {
-      console.error(error, 'func pasuse audio');
-    }
-  };
-  const LoadAudio = async () => {
-    SetLoading(true);
-    const checkLoading = await sound.current.getStatusAsync();
-    //console.log("")
-    if (checkLoading.isLoaded === false) {
-      try {
-        console.log('entrar a cargar el audio');
-        const result = await sound.current.loadAsync(musicON.audio, {}, true);
+  const PlayAudio = () => {
+    const {onPlayAudio} = props;
+    onPlayAudio && onPlayAudio();
+  }
+  const PauseAudio = () => {
+    const {onPauseAudio} = props;
+    onPauseAudio && onPauseAudio();
+  }
 
-        if (result.isLoaded === false) {
-          SetLoading(false);
-          console.log('Error in Loading Audio');
-        } else {
-          console.log(
-            'cargo el video quita el loagind y dice que Loaded cargado video es true',
-          );
-          sound.current.playAsync();
-          SetLoading(false);
-          SetLoaded(true);
-        }
-      } catch (error) {
-        console.log(error, ' func load audio');
-        SetLoading(false);
-      }
-    }
-    else {
-        console.log("tiene audio activo por lo que no cargara uno nuevo")
-        console.log("crear nuevo audio")
-        SetLoading(false);
-        // sound = await Audio.Sound.createAsync(musicON.audio)
-        // await sound.playAsync();
-    }
-    // else {
-    //     //SetLoading(false);
-    //     try {
+//   const LoadAudio = async () => {
+//     SetLoading(true);
+//     const checkLoading = await sound.current.getStatusAsync();
+//     if (checkLoading.isLoaded === false) {
+//       try {
+//         console.log('entrar a cargar el audio');
+//         const result = await sound.current.loadAsync(require("~assets/music/Here-it-Comes-TrackTribe2.mp3"), {}, true);
 
-    //         //TODO recarga audio
-    //         //const { sound } = await Audio.Sound.createAsync(musicON.audio);
-    //         sound = await Audio.Sound.createAsync(musicON.audio)
-    //         //await sound.playAsync();
-    //     }
-    //     catch(error) {
-    //         console.log(error, ' func load new audio');
-    //     SetLoading(false);
-    //     }
-    // }
-  };
+//         if (result.isLoaded === false) {
+//           SetLoading(false);
+//           console.log('Error in Loading Audio');
+//         } else {
+//           console.log(
+//             'cargo el video quita el loagind y dice que Loaded cargado video es true',
+//           );
+//           SetLoading(false);
+//           SetLoaded(true);
+//         }
+//       } catch (error) {
+//         console.log(error, ' func load audio');
+//         SetLoading(false);
+//       }
+//     } else {
+//       console.log('tiene audio activo por lo que no cargara uno nuevo');
+//       console.log('crear nuevo audio');
+//       SetLoading(false);
+//     }
+//     // else {
+//     //     //SetLoading(false);
+//     //     try {
+
+//     //         //TODO recarga audio
+//     //         //const { sound } = await Audio.Sound.createAsync(musicON.audio);
+//     //         sound = await Audio.Sound.createAsync(musicON.audio)
+//     //         //await sound.playAsync();
+//     //     }
+//     //     catch(error) {
+//     //         console.log(error, ' func load new audio');
+//     //     SetLoading(false);
+//     //     }
+//     // }
+//   };
+
+  
+//   React.useEffect(() => {
+//     console.log(musicON, 'carga la info del audio');
+//     LoadAudio();
+//   }, []);
+
   //   const [sound, setSound] = React.useState();
   //   const [play, setPlay] = useState(false);
 
@@ -155,36 +162,36 @@ const RadioPlayComponent = (props) => {
                   <Text>Loading Song </Text>
                 </>
               ) : (
-                <>
-                  <Button title='Play Song' onPress={PlayAudio} />
-                  <Button title='Pause Song' onPress={PauseAudio} />
-                  {Loaded && (
+                <View style={{alignItems: "center", marginTop: 10}}>
+                  {/* <Button title='Play Song' onPress={PlayAudio} />
+                  <Button title='Pause Song' onPress={PauseAudio} /> */}
+                  {playMusic && (
                     <TouchableOpacity onPress={PauseAudio}>
                       <PauseIcon
-                        width={20}
-                        height={20}
+                        width={60}
+                        height={60}
                         fill={themeContext.colors.text}
                       />
                     </TouchableOpacity>
                   )}
-                  {!Loaded && (
+                  {!playMusic && (
                     <TouchableOpacity onPress={PlayAudio}>
                       <PlayIcon
-                        width={20}
-                        height={20}
+                        width={60}
+                        height={60}
                         fill={themeContext.colors.text}
                       />
                     </TouchableOpacity>
                   )}
-                </>
+                </View>
               )}
             </>
           )}
         </View>
-        <View>
+        {/* <View>
           <Text>scooolbar</Text>
           <Text>indicador de tiempos</Text>
-        </View>
+        </View> */}
       </View>
     </View>
   );
