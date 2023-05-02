@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Club Hardcore",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/club-hardcore-w/logo.png",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/club-hardcore-w/69120865_103406207695513_7900678214568116224_n.jpg",
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/FIGHTER.mp4"
+        },
+        {
+            "id": 2,
+            "name": "Hardcore Gamer",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/games/game4.jpg",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/games/game2.jpg",
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/GAMER.mp4"
+        },
+        {
+            "id": 3,
+            "name": "360mx",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/games/game4.jpg",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/games/game2.jpg",
+            "hasPremium": true,
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/360.mp4"
+        },
+        {
+            "id": 4,
+            "name": "Retas legendarias",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/games/game4.jpg",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/games/game2.jpg",
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/RETAS.mp4"
+        },
+        {
+            "id": 5,
+            "name": "Pride",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/pride/images.jpg",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/pride/images.jpg",
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/PRIDE.mp4"
+        },
+        {
+            "id": 6,
+            "name": "Frikis",
+            "picture": "https://social-network.sicssa-lab.com/assets/images/frikis/show-cover.webp",
+            "srcPreview": "https://social-network.sicssa-lab.com/assets/images/frikis/como_vestirse_como_un_friki_3104_600.jpg",
+            "srcStory": "https://www.sicssalab.net/contenido/entretenimiento/FRIKIS.mp4"
+        }
+    ],
+      "loading": false,
+      "error": false
+}

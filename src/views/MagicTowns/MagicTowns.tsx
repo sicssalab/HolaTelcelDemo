@@ -15,7 +15,8 @@ import { Input } from '~views/Avenues/components/Input';
 //import ServicesDropdown from "./components/ServicesDropdown";
 import data from '~views/Avenues/data.json'; //TODO data son los estados nada mas
 import { Container, OptionsContainer } from '~views/Avenues/styles';
-import { mockPueblosMagicos } from '~src/mocks/mockPueblosMagicos';
+//import { mockPueblosMagicos } from '~src/mocks/mockPueblosMagicos';
+import mockPueblosMagicos from "../../mocks/pueblos-magicos/mocksPueblosMagicos.json";
 
 function Component() {
   const navigation = useNavigation();

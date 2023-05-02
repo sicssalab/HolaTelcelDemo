@@ -301,6 +301,306 @@ export const mockGrupos = {
             ]
         },
         {
+            "id": 2,
+            "name": "Medical Network",
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/2-medical-network/avatar.jpg",
+            "profileCover": "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/portada.jpeg",
+            "members": "12k",
+            "information": {
+                "members": "12k",
+                "type": "Publico",
+                "website": "https://medical-network.com",
+                "Phone": "99999999",
+                "email": "informacion@medical-network.com",
+                "category": "Productos/Servicios"
+            },
+            "content": [
+                {
+                    "id": 23,
+                    "picture": "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/Avatar.jpg",
+                    "createDate": "3min",
+                    "name": "Farmacias del ahorro",
+                    "description": "En farmacias del ahorro te queremos bien, ven y visitanos!",
+                    "likes": 367,
+                    "videos": [
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/1.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/2.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/3.mp4"
+                    ],
+                    "comments": [
+                        {
+                            "id": 1,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                            "comment": "En esta tienda siempre encuentro mucha variedad",
+                            "createDate": "3min"
+                        },
+                        {
+                            "id": 2,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                            "comment": "Me parece excelente que tengan área de adopción :)",
+                            "createDate": "7min"
+                        },
+                        {
+                            "id": 3,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                            "comment": "De lujo",
+                            "createDate": "18min"
+                        },
+                        {
+                            "id": 4,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                            "comment": "vamos a ir @pedro",
+                            "createDate": "5hrs"
+                        },
+                        {
+                            "id": 5,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                            "comment": "ese evento se hizo el año pasado y estuvo genial",
+                            "createDate": "7hrs"
+                        },
+                        {
+                            "id": 6,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "9hrs"
+                        },
+                        {
+                            "id": 7,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                            "comment": "Me encanta su contenido",
+                            "createDate": "11hrs"
+                        },
+                        {
+                            "id": 8,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "1d"
+                        }
+                    ]
+                },
+                {
+                    "id": 24,
+                    "picture": "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/Avatar.png",
+                    "createDate": "7hrs",
+                    "name": "Super Doc",
+                    "likes": 367,
+                    "videos": [
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/1.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/2.mp4"
+                    ],
+                    "description": "Contamos con la colaboración de un Consejo Médico del más alto nivel, el cual aporta su conocimiento, así como supervisa la operación en cada fase del del programa.",
+                    "comments": [
+                        {
+                            "id": 1,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                            "comment": "siempre me dan buenos tips, gracias",
+                            "createDate": "3min"
+                        },
+                        {
+                            "id": 2,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                            "comment": "Gracias por estas recomendaciones mi peludo les agradece!",
+                            "createDate": "7min"
+                        },
+                        {
+                            "id": 3,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                            "comment": "De lujo",
+                            "createDate": "18min"
+                        },
+                        {
+                            "id": 4,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                            "comment": "vamos a ir @pedro",
+                            "createDate": "5hrs"
+                        },
+                        {
+                            "id": 5,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                            "comment": "ese evento se hizo el año pasado y estuvo genial",
+                            "createDate": "7hrs"
+                        },
+                        {
+                            "id": 6,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "9hrs"
+                        },
+                        {
+                            "id": 7,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                            "comment": "Me encanta su contenido",
+                            "createDate": "11hrs"
+                        },
+                        {
+                            "id": 8,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "1d"
+                        }
+                    ]
+                },
+                {
+                    "id": 25,
+                    "picture": "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/Avatar.jpg",
+                    "createDate": "9hrs",
+                    "name": "Chopo",
+                    "likes": 367,
+                    "videos": [
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/1.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/2.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/3.mp4"
+                    ],
+                    "description": "En Chopo lo más importante eres tú, por eso te compartimos información relevante sobre nuestras sucursales y servicios.",
+                    "comments": [
+                        {
+                            "id": 1,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                            "comment": "Gracias por existir y dar esta información",
+                            "createDate": "3min"
+                        },
+                        {
+                            "id": 2,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                            "comment": "Se extravio nuestro perro hace tiempo y queremos adoptar uno",
+                            "createDate": "7min"
+                        },
+                        {
+                            "id": 3,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                            "comment": "De lujo",
+                            "createDate": "18min"
+                        },
+                        {
+                            "id": 4,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                            "comment": "vamos a ir @pedro",
+                            "createDate": "5hrs"
+                        },
+                        {
+                            "id": 5,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                            "comment": "ese evento se hizo el año pasado y estuvo genial",
+                            "createDate": "7hrs"
+                        },
+                        {
+                            "id": 6,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "9hrs"
+                        },
+                        {
+                            "id": 7,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                            "comment": "Me encanta su contenido",
+                            "createDate": "11hrs"
+                        },
+                        {
+                            "id": 8,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "1d"
+                        }
+                    ]
+                },
+                {
+                    "id": 26,
+                    "picture": "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/Avatar.png",
+                    "createDate": "11hrs",
+                    "name": "Salud y belleza",
+                    "likes": 367,
+                    "videos": [
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/1.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/2.mp4",
+                        "https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/3.mp4"
+                    ],
+                    "description": "Ven a visitar nuestras tiendas y conoce todas nuestras especies y variedad de productos.",
+                    "comments": [
+                        {
+                            "id": 1,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                            "comment": "Me apasionan estos animales y lo raros que aveces son.",
+                            "createDate": "3min"
+                        },
+                        {
+                            "id": 2,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                            "comment": "Seguro a mucha gente le ayudaran a decirse por la mejor opción.",
+                            "createDate": "7min"
+                        },
+                        {
+                            "id": 3,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                            "comment": "De lujo",
+                            "createDate": "18min"
+                        },
+                        {
+                            "id": 4,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                            "comment": "vamos a ir @pedro",
+                            "createDate": "5hrs"
+                        },
+                        {
+                            "id": 5,
+                            "userName": "Patricia Lebsack",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                            "comment": "ese evento se hizo el año pasado y estuvo genial",
+                            "createDate": "7hrs"
+                        },
+                        {
+                            "id": 6,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "9hrs"
+                        },
+                        {
+                            "id": 7,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                            "comment": "Me encanta su contenido",
+                            "createDate": "11hrs"
+                        },
+                        {
+                            "id": 8,
+                            "userName": "Leanne Graham",
+                            "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                            "comment": "Donde se encuentra eso??",
+                            "createDate": "1d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": 1,
             "name": "Street turbo",
             "picture": "https://social-network.sicssa-lab.com/assets/mocks/1-Street-turbo/perfil.jpeg",

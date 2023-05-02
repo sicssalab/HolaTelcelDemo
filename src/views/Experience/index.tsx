@@ -15,7 +15,7 @@ import ServicesDropdown from "./components/ServicesDropdown";
 import data from '~views/Avenues/data.json'; //TODO data son los estados nada mas
 import { Container, OptionsContainer } from '~views/Avenues/styles';
 import { mockServiciosExperiencia } from '~src/mocks/mockServiciosExperiencia';
-
+import mocksExperiencias from "../../mocks/experiencias/mocksExperiencias.json"
 function Component() {
   const navigation = useNavigation();
   const [selectedStateId, setSelectedStateId] = useState(null);
@@ -42,7 +42,7 @@ function Component() {
     //TODO Muesta la lista de servicios por la avenida seleccionada
     if (avenueId) {
       //TODO seleccionar todos los servicios de X estado
-      const services = mockServiciosExperiencia.data.filter((servicio) => servicio.state_id === stateId && servicio.service_id === avenueId)
+      const services = mocksExperiencias.data.filter((servicio) => servicio.state_id === stateId && servicio.service_id === avenueId)
       setFilteredPosts(services);
     } else {
       setFilteredPosts([]);

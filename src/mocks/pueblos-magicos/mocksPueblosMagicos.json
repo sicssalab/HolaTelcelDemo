@@ -1,0 +1,362 @@
+{
+    "data": {
+        "content": [
+            {
+                "id": 1,
+                "name": "Bernal",
+                "picture": "https://www.sicssalab.net/contenido/pueblos-magicos/bernal/avatar.jpg",
+                "createDate": "30min",
+                "description": "Bernal, Querétaro, Es un Pueblo Mágico lleno de colores y vida donde puedes pasar un fin de semana en familia gozando de la tranquilidad y buen clima que ofrece mientras disfrutan de la gastronomía y las artesanías locales. ",
+                "address": "Bernal, Querétaro,",
+                "stars": 5,
+                "likes": 456,
+                "streaming": "https://www.sicssalab.net/contenido/pueblos-magicos/bernal/2.mp4",
+                "hasActiveStreaming": true,
+                "videos": [
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/bernal/1.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/bernal/3.mp4"
+                ],
+                "comments": [
+                    {
+                        "id": 1,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Información y precios por favor",
+                        "createDate": "2hrs",
+                        "userName": "Elvis Kuk"
+                    },
+                    {
+                        "id": 2,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Hola, me porporcionas precio de las actividades de favor!",
+                        "createDate": "4hrs",
+                        "userName": "Selina Paul"
+                    },
+                    {
+                        "id": 3,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Hola, me porporcionas precio de las actuvidades de favor !",
+                        "createDate": "7hrs",
+                        "userName": "Chris Alex"
+                    },
+                    {
+                        "id": 4,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                        "comment": "info",
+                        "createDate": "1d",
+                        "userName": "Selina Paul"
+                    },
+                    {
+                        "id": 5,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "Info de tours por favor :)",
+                        "createDate": "3d",
+                        "userName": "Christy Alex"
+                    },
+                    {
+                        "id": 6,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                        "comment": "Donde se encuentra ésta belleza para ir",
+                        "createDate": "6d",
+                        "userName": "Selina Paul"
+                    },
+                    {
+                        "id": 7,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Yo quiero ir!!!",
+                        "createDate": "4sem",
+                        "userName": "Christy Alex"
+                    },
+                    {
+                        "id": 8,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "Me parece interesante, me gustaria ir",
+                        "createDate": "3d",
+                        "userName": "Christy Alex"
+                    },
+                    {
+                        "id": 9,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Info de vuelo en globo porfis",
+                        "createDate": "7hrs",
+                        "userName": "Christy Alex"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Taxco",
+                "picture": "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/avatar.jpg",
+                "createDate": "45min",
+                "description": "Encantador pueblo mágico con una larga historia escrita en cantera  plata.",       
+                "stars":4,
+                "likes": 854,
+                "streaming": "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/6.mp4",
+                "hasActiveStreaming": false,
+                "videos": [
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/1.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/2.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/3.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/taxco/4.mp4"
+                ],
+                "comments": [
+                    {
+                        "id": 1,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "saben si sigue la proyección de video mapping de la temporada \"Taxco es cultura\", en la plaza Borda ",
+                        "createDate": "2hrs",
+                        "userName": "Sophina Campos "
+                    },
+                    {
+                        "id": 2,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Genial ahi nos vemos!",
+                        "createDate": "4hrs",
+                        "userName": "Emilia Aragon"
+                    },
+                    {
+                        "id": 3,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                        "comment": "Woow que padre",
+                        "createDate": "7hrs",
+                        "userName": "Marino Pacheco"
+                    },
+                    {
+                        "id": 4,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                        "comment": "Hermoso mi Taxco querido!",
+                        "createDate": "1d",
+                        "userName": "Celeste Añil"
+                    },
+                    {
+                        "id": 5,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "De que es la proyección?",
+                        "createDate": "3d",
+                        "userName": "Eduardh Lorel"
+                    },
+                    {
+                        "id": 6,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                        "comment": "Ahi me compre mis aretes amor Carlos Beltran",
+                        "createDate": "6d",
+                        "userName": "Evelin Sau"
+                    },
+                    {
+                        "id": 7,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Algun dia regresaremos Leslie Castellanos",
+                        "createDate": "4sem",
+                        "userName": "Tania Castellanos"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Tepoztlan",
+                "picture": "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/avatar.jpg",
+                "createDate": "1d",
+                "description": "Pueblo místico que conserva un fuerte sentido de identidad. Enclavado en la parte norte del estado y a 17 km de la ciudad de Cuernavaca, Tepoztlán es el destino turístico favorito en Morelos.",
+                "address": "Tepoztlán, Morelos",
+                "stars": 5,
+                "likes": 456,
+                "streaming": "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/6.mp4",
+                "hasActiveStreaming": false,
+                "videos": [
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/1.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/2.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/3.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/tepoztlan/4.mp4"
+                ],
+                "comments": [
+                    {
+                        "id": 1,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                        "comment": "Estas vacaciones de Semana Santa, queremos invitarl@s a conocer la Pulqueria Vacas Verdes, una increíble terraza para pasarla una tarde increíble con tus personas favoritas.",
+                        "createDate": "2hrs",
+                        "userName": "Javier Alarcon"
+                    },
+                    {
+                        "id": 2,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Se ve un lugar increíble.",
+                        "createDate": "4hrs",
+                        "userName": "Natasha Fuentes"
+                    },
+                    {
+                        "id": 3,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Cada vez al mes voy a visitarlos",
+                        "createDate": "7hrs",
+                        "userName": "Diego Orozco"
+                    },
+                    {
+                        "id": 4,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                        "comment": "Que puedo hacer en tepoz?",
+                        "createDate": "1d",
+                        "userName": "Monica Tara"
+                    },
+                    {
+                        "id": 5,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "Saben si existe un spa para relajarme con mi pareja.",
+                        "createDate": "3d",
+                        "userName": "Leonel Corleone"
+                    },
+                    {
+                        "id": 6,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                        "comment": "Siento que todo mi fin de semana fue un sueño",
+                        "createDate": "6d",
+                        "userName": "Patricia Acevedo"
+                    },
+                    {
+                        "id": 7,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Solo cuanto las horas para ir a visitarlo",
+                        "createDate": "4sem",
+                        "userName": "Karina Galvao"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Velle de Bravo",
+                "picture": "https://www.sicssalab.net/contenido/pueblos-magicos/avatar.jpg",
+                "createDate": "2d",
+                "description": "Han sido varios los nombres que se le han dado a Valle de Bravo desde la llegada de los frailes franciscanos a su territorio",
+                "address": "Velle de Bravo-EDO MEX",
+                "stars": 5,
+                "likes": 756,
+                "streaming": "https://www.sicssalab.net/assets/contenido/pueblos-magicos/velle-bravo/6.mp4",
+                "hasActiveStreaming": false,
+                "videos": [
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/velle-bravo/1.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/velle-bravo/2.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/velle-bravo/3.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/velle-bravo/4.mp4"
+                ],
+                "comments": [
+                    {
+                        "id": 1,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "FESTIVAL DEL PAN DE QUESO, ZACATLÁN PUEBLA, No te lo puedes perder!!",
+                        "createDate": "2hrs",
+                        "userName": "Jenifer Tomson"
+                    },
+                    {
+                        "id": 2,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Vamos!! Esta hermoso",
+                        "createDate": "4hrs",
+                        "userName": "Keate Zukut"
+                    },
+                    {
+                        "id": 3,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Uuff que ricoo!! Yo quiero ir",
+                        "createDate": "7hrs",
+                        "userName": "Joseph Leonel"
+                    },
+                    {
+                        "id": 4,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                        "comment": "Amor vamos, pancita llena, corazon contento",
+                        "createDate": "1d",
+                        "userName": "Paola Bustamante"
+                    },
+                    {
+                        "id": 5,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "Deliciosos los panes",
+                        "createDate": "3d",
+                        "userName": "Assael Shereth"
+                    },
+                    {
+                        "id": 6,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                        "comment": "Que delicioso, vamos Enrique  Mendez",
+                        "createDate": "6d",
+                        "userName": "Joseline Lara"
+                    },
+                    {
+                        "id": 7,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Ahora si ire  a probarlos 🤗",
+                        "createDate": "4sem",
+                        "userName": "Marcos Whither"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Zacatlan De Las Manzanas",
+                "picture": "https://www.sicssalab.net/contenido/pueblos-magicos/avatar.jpg",
+                "createDate": "2d",
+                "description": "Entrar a este Pueblo Mágico es llegar a un mundo distinto, se percibe niebla y frío, como si alguien hubiera levantado la comunidad entera hasta las nubes." ,
+                "address": "Zacatlán, Puebla",
+                "stars": 5,
+                "likes": 756,
+                "streaming": "https://www.sicssalab.net/contenido/pueblos-magicos/zacatlan/3.mp4",
+                "hasActiveStreaming": true,
+                "videos": [
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/zacatlan/1.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/zacatlan/2mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/zacatlan/4.mp4",
+                    "https://www.sicssalab.net/contenido/pueblos-magicos/zacatlan/6.mp4"
+                ],
+                "comments": [
+                    {
+                        "id": 1,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg,",
+                        "comment": "FESTIVAL DEL PAN DE QUESO, ZACATLÁN PUEBLA, No te lo puedes perder!!",
+                        "createDate": "2hrs",
+                        "userName": "Sara Brithgs"
+                    },
+                    {
+                        "id": 2,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Vamos!! Esta hermoso",
+                        "createDate": "4hrs",
+                        "userName": "Joanha Ojeda"
+                    },
+                    {
+                        "id": 3,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                        "comment": "Uuff que ricoo!! Yo quiero ir",
+                        "createDate": "7hrs",
+                        "userName": "Gustavo Delfin"
+                    },
+                    {
+                        "id": 4,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                        "comment": "Amor vamos, pancita llena, corazon contento",
+                        "createDate": "1d",
+                        "userName": "Prisilla Morales"
+                    },
+                    {
+                        "id": 5,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                        "comment": "Quiero comprar esferas para esta navidad",
+                        "createDate": "3d",
+                        "userName": "Natanael Diaz"
+                    },
+                    {
+                        "id": 6,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                        "comment": "Que delicioso, vamos Enrique  Mendez",
+                        "createDate": "6d",
+                        "userName": "Judith Aredondo"
+                    },
+                    {
+                        "id": 7,
+                        "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                        "comment": "Ahora si ire  a probarlos 🤗",
+                        "createDate": "4sem",
+                        "userName": "Lisette Haro"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -82,6 +82,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@react-native-community/cli-platform-ios": "3.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/color": "^3.0.1",
     "@types/lodash": "^4.14.170",

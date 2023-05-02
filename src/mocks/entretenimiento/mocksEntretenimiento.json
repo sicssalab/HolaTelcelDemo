@@ -1,0 +1,373 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/1-street-turbo/avatar.png",
+            "createDate": "3min",
+            "name": "Street Turbo",
+            "description": "Llantas, refacciones, talleres mécanicos, carreras y más",
+            "likes": 967,
+            "videos": [
+                "https://www.sicssalab.net/contenido/entretenimiento/1-street-turbo/1.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/1-street-turbo/2.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/1-street-turbo/3.mp4"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "userName": "Leanne Graham",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "Que buen contenido bro!!",
+                    "createDate": "2seg"
+                },
+                {
+                    "id": 2,
+                    "userName": "Bret",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "siempre encuentro todo para mi auto, Gracias XD",
+                    "createDate": "1hr"
+                },
+                {
+                    "id": 3,
+                    "userName": "Ervin Howell",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                    "comment": "Me encanta su contenido",
+                    "createDate": "4hrs"
+                },
+                {
+                    "id": 4,
+                    "userName": "Antonette",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                    "comment": "Donde se encuentra eso??",
+                    "createDate": "7hrs"
+                },
+                {
+                    "id": 5,
+                    "userName": "Victor Plains",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                    "comment": "De lujo",
+                    "createDate": "12hrs"
+                },
+                {
+                    "id": 6,
+                    "userName": "Clementine Bauch",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                    "comment": "vamos a ir @pedro",
+                    "createDate": "1d"
+                },
+                {
+                    "id": 7,
+                    "userName": "Patricia Lebsack",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "you fui a uno de sus eventos y estuvo genial",
+                    "createDate": "2d"
+                },
+                {
+                    "id": 8,
+                    "userName": "Karianne",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "Que interesante",
+                    "createDate": "5d"
+                },
+                {
+                    "id": 9,
+                    "userName": "Chelsey Dietrich",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                    "comment": "Me encantan los cosnsejos que dan",
+                    "createDate": "1sem"
+                },
+                {
+                    "id": 10,
+                    "userName": "Kurtis Weissnat",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                    "comment": "Muchas gracias por la información",
+                    "createDate": "3sem"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/2-medical-network/avatar.jpg",
+            "createDate": "2d",
+            "name": "Medical Network",
+            "description": "Doctores, consultas, diagnosticos, farmacia, laboratorios, tips y consejos para la salud y belleza, Todo encuentralo aquí en Medical Network",
+            "likes": 209,
+            "videos": [
+                "https://www.sicssalab.net/contenido/entretenimiento/2-medical-network/1.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/2-medical-network/2.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/2-medical-network/3.mp4"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "userName": "Ervin Howell",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                    "comment": "Me han cambiado la vida, siempre encuentro resolver mis dudas.",
+                    "createDate": "7seg"
+                },
+                {
+                    "id": 2,
+                    "userName": "Antonette",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                    "comment": "Es genial contar con los expertos!!",
+                    "createDate": "1min"
+                },
+                {
+                    "id": 3,
+                    "userName": "Victor Plains",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                    "comment": "¡Gracias por la recomendación! Estoy buscando un buen cardiólogo para mi abuelo, voy a contactar al Dr.",
+                    "createDate": "6min"
+                },
+                {
+                    "id": 4,
+                    "userName": "Clementine Bauch",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                    "comment": "¿Cuáles son los horarios de consulta del @Dr",
+                    "createDate": "20min"
+                },
+                {
+                    "id": 5,
+                    "userName": "Patricia Lebsack",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "Tengo una cita con el @Dr la próxima semana, espero que pueda ayudarme con mi problema cardíaco.",
+                    "createDate": "1hr"
+                },
+                {
+                    "id": 6,
+                    "userName": "Karianne",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "Justo lo que necesitaba, ¡gracias por la información!",
+                    "createDate": "5hrs"
+                },
+                {
+                    "id": 7,
+                    "userName": "Chelsey Dietrich",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                    "comment": "¿Cómo puedo reservar mi cita con el Dr.",
+                    "createDate": "10hrs"
+                },
+                {
+                    "id": 8,
+                    "userName": "Kurtis Weissnat",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                    "comment": "¿Aceptan seguro médico en el Hospital?",
+                    "createDate": "2d"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/3-noticalles/avatar.jpg",
+            "createDate": "4sem",
+            "name": "Noti Calles",
+            "description": "Ponte al día con las noticias!",
+            "likes": 183,
+            "videos": [
+                "https://www.sicssalab.net/contenido/entretenimiento/3-noticalles/1.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/3-noticalles/2.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/3-noticalles/3.mp4"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "userName": "Leanne Graham",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                    "comment": "Gracias por mantenernos informados siempre!",
+                    "createDate": "2hrs"
+                },
+                {
+                    "id": 2,
+                    "userName": "Britany",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                    "comment": "Me encantan estos reportajes, muchas gracias Noticalles!",
+                    "createDate": "4hrs"
+                },
+                {
+                    "id": 3,
+                    "userName": "Ervin Howell",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                    "comment": "Finalmente, alguien está haciendo algo...",
+                    "createDate": "7hrs"
+                },
+                {
+                    "id": 4,
+                    "userName": "Antonette",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                    "comment": "¡Excelente noticia!",
+                    "createDate": "1d"
+                },
+                {
+                    "id": 5,
+                    "userName": "Victor Plains",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "¡No lo puedo creer!",
+                    "createDate": "3d"
+                },
+                {
+                    "id": 6,
+                    "userName": "Clementine Bauch",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "¡No puedo esperar!",
+                    "createDate": "6d"
+                },
+                {
+                    "id": 7,
+                    "userName": "Patricia Lebsack",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                    "comment": "Me encanta su contenido",
+                    "createDate": "1sem"
+                },
+                {
+                    "id": 8,
+                    "userName": "Karianne",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                    "comment": "Donde se encuentra eso??",
+                    "createDate": "4sem"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/4-f1/avatar.jpg",
+            "createDate": "5sem",
+            "name": "Formula 1",
+            "hasPremium": true,
+            "description": "Los primeros indicios son que Óscar estará al mismo ritmo que Lando, y los dos se presionarán duro el uno al otro.",
+            "likes": 999,
+            "videos": [
+                "https://www.sicssalab.net/contenido/entretenimiento/4-f1/1.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/4-f1/2.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/4-f1/3.mp4"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "userName": "Leanne Graham",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                    "comment": "Yo creo que este año Óscar supera a Lando, ya verán.",
+                    "createDate": "1min"
+                },
+                {
+                    "id": 2,
+                    "userName": "Brety",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                    "comment": "El equipo de McLaren espero vayan quedando en mejores lugares.",
+                    "createDate": "3hrs"
+                },
+                {
+                    "id": 3,
+                    "userName": "Ervin Howell",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                    "comment": "Creo que Lando ha sido más consistente esta temporada, peor Óscar ha demostrado una velocidad impresionante en la calificación.",
+                    "createDate": "7hrs"
+                },
+                {
+                    "id": 4,
+                    "userName": "Antonette",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                    "comment": "Será interesante ver cómo ellos mejoran en las próximas carreras.",
+                    "createDate": "2d"
+                },
+                {
+                    "id": 5,
+                    "userName": "Victor Plains",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "Estoy de acuerdo, Lando ha sido más consistente.",
+                    "createDate": "4d"
+                },
+                {
+                    "id": 6,
+                    "userName": "Clementine Bauch",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "Óscar ha estado mejorando carrera a carrera.",
+                    "createDate": "1sem"
+                },
+                {
+                    "id": 7,
+                    "userName": "Patrick Lebsack",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                    "comment": "No me sorprendería si Óscar gana 1 o 2 carreras esta temporada.",
+                    "createDate": "3sem"
+                },
+                {
+                    "id": 8,
+                    "userName": "Karlay",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                    "comment": "Vámos Óscar!",
+                    "createDate": "5sem"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "picture": "https://www.sicssalab.net/contenido/entretenimiento/5-animal-cool/avatar.png",
+            "createDate": "1d",
+            "name": "Animal Cool",
+            "description": "Especies extintas, flora, fauna. Aprende de todo en Animal Cool!",
+            "likes": 999,
+            "videos": [
+                "https://www.sicssalab.net/contenido/entretenimiento/5-animal-cool/1.mp4",
+                "https://www.sicssalab.net/contenido/entretenimiento/5-animal-cool/2.mp4"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "userName": "Leanne Graham",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png",
+                    "comment": "Adoro a los animales!!",
+                    "createDate": "3min"
+                },
+                {
+                    "id": 2,
+                    "userName": "Bret",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+                    "comment": "Me fascina este contenido, Gracias Animal cool",
+                    "createDate": "7min"
+                },
+                {
+                    "id": 3,
+                    "userName": "Ervin Howell",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/5556549.png",
+                    "comment": "¡Miren! Es tan lindo ¿No creen?",
+                    "createDate": "18min"
+                },
+                {
+                    "id": 4,
+                    "userName": "Antonette",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.webp",
+                    "comment": "¡Me encantaría ir a verlos!",
+                    "createDate": "5hrs"
+                },
+                {
+                    "id": 5,
+                    "userName": "Victor Plains",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/png-clipart-advertising-service-blog-internet-avatar-woman-face-black-hair.png",
+                    "comment": "Tienes razón, son adorables!",
+                    "createDate": "7hrs"
+                },
+                {
+                    "id": 6,
+                    "userName": "Clementine Bauch",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/placeholder.png",
+                    "comment": "¡Hoy fuimos y tomé varias fotos! ¡Es increíble!",
+                    "createDate": "9hrs"
+                },
+                {
+                    "id": 7,
+                    "userName": "Patricia Lebsack",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/3641963.png",
+                    "comment": "¡Qué belleza! Es realmente impresionante.",
+                    "createDate": "11hrs"
+                },
+                {
+                    "id": 8,
+                    "userName": "Karianne",
+                    "picture": "https://social-network.sicssa-lab.com/assets/images/avatars/images.png",
+                    "comment": "¡Qué envidia! Me encantaría estar allí personalmente.",
+                    "createDate": "1d"
+                }
+            ]
+        }
+    ]
+}

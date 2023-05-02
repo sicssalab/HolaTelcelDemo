@@ -1,15 +1,14 @@
 {
   "displayName": "Social App Demo - Hol@ Telcel",
   "expo": {
-    "name": "Social App - Demo",
+    "name": "HolaTelcelDemo2",
     "description": "Social App Demo - Hol@ Telcel",
     "scheme": "social-app",
     "slug": "holatelceldemo2",
     "icon": "./src/assets/favicon.png",
     "orientation": "default",
     "platforms": [
-      "ios",
-      "android"
+      "ios"
     ],
     "androidStatusBar": {
       "barStyle": "light-content",
@@ -17,7 +16,8 @@
       "translucent": true
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/1bf0183d-f972-4f3b-bcfc-e468e59c593f"
     },
     "splash": {
       "image": "./src/assets/images/splash@3x.png",
@@ -30,15 +30,6 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "mx.psadigital.social"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#f5df4d"
-      },
-      "package": "mx.psadigital.social",
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
-      ]
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
@@ -72,6 +63,15 @@
         }
       ]
     ],
-    "owner": "wen3"
+    "owner": "wen3",
+    "android": {
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "mx.psadigital.social"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
   }
 }
