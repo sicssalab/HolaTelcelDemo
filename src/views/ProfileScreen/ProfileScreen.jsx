@@ -20,6 +20,7 @@ import { mockAvenidasPerfiles } from '~src/mocks/mockAvenidasPerfiles';
 import { mockPerfiles } from '~src/mocks/mockPerfiles';
 import { mockServiciosExperiencia } from '~src/mocks/mockServiciosExperiencia';
 import { mockServiciosExperienciaPerfiles } from '~src/mocks/mockServiciosExperienciaPerfiles';
+import mocksExperienciasPerfiles from "../../mocks/experiencias/mocksExperienciasPerfiles.json";
 import GlobalPost from '~views/Avenues/components/GlobalPost/GlobalPost';
 import HeaderGroupSectionScreen from '~views/GroupSectionScreen/components/HeaderGroupSectionScreen';
 import { FeedPost } from '~views/PostFeed';
@@ -28,7 +29,8 @@ import { mockEntertainment } from '~views/PostFeed/__mocks__';
 //import { mockPersonal } from '~views/ProfileScreen/__mockpersonal__';
 //import { mockRequest } from '~views/ProfileScreen/__mocks__';
 import { Header, BackTouchArea } from './styles';
-import { mockPueblosMagicosPerfiles } from '~src/mocks/mockPueblosMagicosPerfiles';
+//import { mockPueblosMagicosPerfiles } from '~src/mocks/mockPueblosMagicosPerfiles';
+import mockPueblosMagicosPerfiles from "../../mocks/pueblos-magicos/mocksPueblosMagicosPerfiles.json"
 
 const ProfileScreen = (props) => {
   const navigation = useNavigation();
@@ -37,28 +39,6 @@ const ProfileScreen = (props) => {
   const [itemView, setItemView] = useState({});
 
   useEffect(() => {
-    // if (props.route.params.profilePage.type === typeMockConstants.GROUP_PROFILE)
-    //   setItemView(
-    //     mockPerfiles.data.find(
-    //       (perfil) => perfil.id == props.route.params.profilePage.id,
-    //     ),
-    //   );
-    // else if (
-    //   props.route.params.profilePage.type === typeMockConstants.AVENUES_PROFILE
-    // )
-    //   setItemView(
-    //     mockAvenidasPerfiles.data.find(
-    //       (perfil) => perfil.id == props.route.params.profilePage.id,
-    //     ),
-    //   );
-    // else if (
-    //   props.route.params.profilePage.type === typeMockConstants.SERVICES_PROFILE
-    // )
-    // setItemView(
-    //   mockServiciosExperienciaPerfiles.data.find(
-    //     (perfil) => perfil.id == props.route.params.profilePage.id,
-    //   ),
-    // );
     switch(props.route.params.profilePage.type) {
       case typeMockConstants.GROUP_PROFILE:
         setItemView(
@@ -76,14 +56,7 @@ const ProfileScreen = (props) => {
         break;
       case typeMockConstants.SERVICES_PROFILE:
         setItemView(
-          mockServiciosExperienciaPerfiles.data.find(
-            (perfil) => perfil.id == props.route.params.profilePage.id,
-          ),
-        );
-        break;
-      case typeMockConstants.GROUP_PROFILE:
-        setItemView(
-          mockPerfiles.data.find(
+          mocksExperienciasPerfiles.data.find(
             (perfil) => perfil.id == props.route.params.profilePage.id,
           ),
         );
@@ -99,7 +72,7 @@ const ProfileScreen = (props) => {
     }
 
   }, [props.route.params.profilePage]);
-  console.log(itemView);
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.secondaryBackground }}>
       <SafeAreaView style={{ flex: 1 }}>

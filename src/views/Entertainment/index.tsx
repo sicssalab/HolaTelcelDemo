@@ -5,9 +5,11 @@ import { SceneName } from '~src/@types/SceneName';
 //import { FeedPost } from '~views/PostFeed';
 import { mockEntertainment } from '~views/PostFeed/__mocks__';
 import { mockRequest } from './__mocks__';
+import mocksStory from "../../mocks/entretenimiento/mocksStory.json";
 import { Header } from './components/Header';
 import { Container } from './styles';
 import ListGlobalPost from '~components/ui/ListGlobalPost';
+import mocksEntretenimiento from "../../mocks/entretenimiento/mocksEntretenimiento.json";
 
 function Component() {
   const navigation = useNavigation();
@@ -18,11 +20,10 @@ function Component() {
 
   return (
     <Container>
-      <SafeComponent request={mockRequest}>
+      <SafeComponent request={mocksStory}>
         <Header />
       </SafeComponent>
-      {/* <FeedPost postContent={mockEntertainment.data} /> */}
-      <ListGlobalPost items={mockEntertainment.data} onNavigateClick={onNavigateClick} />
+      <ListGlobalPost items={mocksEntretenimiento.data} onNavigateClick={onNavigateClick} />
     </Container>
   );
 }

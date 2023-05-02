@@ -17,6 +17,11 @@
     "preview3": {
       "developmentClient": true
     },
-    "production": {}
+    "production": {},
+    "simulator": {
+      "ios": {
+        "simulator": true
+      }
+    }
   }
 }

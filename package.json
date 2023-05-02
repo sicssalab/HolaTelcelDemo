@@ -24,7 +24,7 @@
     "@use-expo/font": "^2.0.0",
     "axios": "^0.27.2",
     "color": "^4.2.3",
-    "expo": "^47.0.0",
+    "expo": "~47.0.14",
     "expo-av": "~13.0.3",
     "expo-blur": "~12.0.1",
     "expo-constants": "~14.0.2",
@@ -82,6 +82,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@react-native-community/cli-platform-ios": "3.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/color": "^3.0.1",
     "@types/lodash": "^4.14.170",

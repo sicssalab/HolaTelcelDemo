@@ -50,42 +50,57 @@ const GroupSectionScreen = (props) => {
   return (
     <View style={{flex: 1, backgroundColor: colors.secondaryBackground}}>
       <SafeAreaView style={{ flex: 1}}>
-        <HeaderGroupSectionScreen item={itemView} />
-        <ScrollView
-          style={styles.container}
-          contentContainerStyle={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: colors.secondaryBackground,
-          }}
-          showsVerticalScrollIndicator={false}>
-          <Image style={styles.profileCover} source={{ uri: itemView.profileCover }} />
-          <Text style={styles.userName}>{itemView.name}</Text>
-          <Text style={styles.aboutUser}>
-            {itemView.hasPremium ? 'Privado' : 'Publico'}
-            {itemView.members ? ` - ${itemView.members} miembros` : ''}
-          </Text>
-          {/* <Text style={styles.aboutUser}>{itemView?.description}</Text> */}
-          <View style={styles.userBtnWrapper}>
-            <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
-              <Text style={styles.userBtnTxt}>Message</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
-              <Text style={styles.userBtnTxt}>Follow</Text>
-            </TouchableOpacity>
+        <HeaderGroupSectionScreen item={
+            itemView
+              ? itemView
+              : {
+                  name: 'regresar',
+                }
+          } />
+          {!itemView && (
+          <View>
+            <Text style={styles.userInfoSubTitle}>
+              Ups! no se encontro el perfil seleccionado
+            </Text>
           </View>
-          <View style={styles.userInfoWrapper}>
-            <View style={styles.userInfoItem}>
-              <Text style={styles.userInfoTitle}>{itemView.content?.length}</Text>
-              <Text style={styles.userInfoSubTitle}>Publicaciones</Text>
+        )}
+        {itemView && (
+          <ScrollView
+            style={styles.container}
+            contentContainerStyle={{
+              justifyContent: 'center',
+              alignItems: 'center',
+              backgroundColor: colors.secondaryBackground,
+            }}
+            showsVerticalScrollIndicator={false}>
+            <Image style={styles.profileCover} source={{ uri: itemView.profileCover }} />
+            <Text style={styles.userName}>{itemView.name}</Text>
+            <Text style={styles.aboutUser}>
+              {itemView.hasPremium ? 'Privado' : 'Publico'}
+              {itemView.members ? ` - ${itemView.members} miembros` : ''}
+            </Text>
+            {/* <Text style={styles.aboutUser}>{itemView?.description}</Text> */}
+            <View style={styles.userBtnWrapper}>
+              <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
+                <Text style={styles.userBtnTxt}>Message</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.userBtn} onPress={() => {}}>
+                <Text style={styles.userBtnTxt}>Follow</Text>
+              </TouchableOpacity>
             </View>
-            <View style={styles.userInfoItem}>
-              <Text style={styles.userInfoTitle}>{itemView.members}</Text>
-              <Text style={styles.userInfoSubTitle}>Seguidos</Text>
+            <View style={styles.userInfoWrapper}>
+              <View style={styles.userInfoItem}>
+                <Text style={styles.userInfoTitle}>{itemView.content?.length}</Text>
+                <Text style={styles.userInfoSubTitle}>Publicaciones</Text>
+              </View>
+              <View style={styles.userInfoItem}>
+                <Text style={styles.userInfoTitle}>{itemView.members}</Text>
+                <Text style={styles.userInfoSubTitle}>Seguidos</Text>
+              </View>
             </View>
-          </View>
-          <ListGlobalPost items={itemView.content} onNavigateClick={onNavigateClick} />
-        </ScrollView>
+            <ListGlobalPost items={itemView.content} onNavigateClick={onNavigateClick} />
+          </ScrollView>
+        )}
       </SafeAreaView>
     </View>
   );

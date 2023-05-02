@@ -1250,5 +1250,301 @@ export const mockPerfiles = {
         },
       ],
     },
+    {
+      id: 23,
+      idGrupo: 2,
+      name: 'Farmacias del ahorro',
+      picture:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/Avatar.jpg',
+      profileCover:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/perfil/portada.jpg',
+      members: '12k',
+      category: 'Productos',
+      type: 'Privado',
+      content: [
+        {
+          id: 6,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/Avatar.jpg',
+          createDate: '11hrs',
+          name: 'Farmacias del ahorro',
+          likes: 367,
+          videos: [
+            'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/perfil/1.mp4',
+          ],
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment:
+                'Que impresionante, cada carrera tiene un nivel de emoción escalofriante!',
+              createDate: '7hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment:
+                'Cada carrera de checo me ah puesto los nervis de punta!',
+              createDate: '11hrs',
+            },
+          ],
+        },
+        {
+          id: 7,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/1-Farmacias-del-ahorro/Avatar.jpg',
+          createDate: '11hrs',
+          name: 'Farmacias del ahorro',
+          likes: 367,
+          videos: [],
+          description:
+            '10 años bailando al son del corazón. En su 10 aniversario, farmacias del ahorro les hace la cordial invitación de asistir a nuestras tiendas en donde encontrarán descuentos y muchas sorpresas más, no faltes, te esperamos!',
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment: 'Super emoción!!',
+              createDate: '5hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment: 'ESOOOOO!!!! ',
+              createDate: '7hrs',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 24,
+      idGrupo: 2,
+      name: 'Super Doc',
+      picture:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/Avatar.png',
+      profileCover:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/perfil/portada.jpeg',
+      members: '12k',
+      category: 'Productos',
+      type: 'Privado',
+      content: [
+        {
+          id: 6,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/Avatar.png',
+          createDate: '11hrs',
+          name: 'Super Doc',
+          likes: 367,
+          videos: [
+            'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/perfil/1.mp4',
+          ],
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment:
+                'Que impresionante, cada carrera tiene un nivel de emoción escalofriante!',
+              createDate: '7hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment:
+                'Cada carrera de checo me ah puesto los nervis de punta!',
+              createDate: '11hrs',
+            },
+          ],
+        },
+        {
+          id: 7,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/2-Super-Doc/Avatar.png',
+          createDate: '11hrs',
+          name: 'Super Doc',
+          likes: 367,
+          videos: [],
+          description:
+            '10 años bailando al son del corazón. En su 10 aniversario, farmacias del ahorro les hace la cordial invitación de asistir a nuestras tiendas en donde encontrarán descuentos y muchas sorpresas más, no faltes, te esperamos!',
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment: 'Super emoción!!',
+              createDate: '5hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment: 'ESOOOOO!!!! ',
+              createDate: '7hrs',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 25,
+      idGrupo: 2,
+      name: 'Chopo',
+      picture:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/Avatar.jpg',
+      profileCover:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/perfil/portada.jpeg',
+      members: '12k',
+      category: 'Productos',
+      type: 'Privado',
+      content: [
+        {
+          id: 6,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/Avatar.jpg',
+          createDate: '11hrs',
+          name: 'Chopo',
+          likes: 367,
+          videos: [
+            'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/perfil/1.mp4',
+          ],
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment:
+                'Que impresionante, cada carrera tiene un nivel de emoción escalofriante!',
+              createDate: '7hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment:
+                'Cada carrera de checo me ah puesto los nervis de punta!',
+              createDate: '11hrs',
+            },
+          ],
+        },
+        {
+          id: 7,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/3-Chopo/Avatar.jpg',
+          createDate: '11hrs',
+          name: 'Chopo',
+          likes: 367,
+          videos: [],
+          description:
+            'En Chopo lo más importante eres tú, por eso te compartimos información relevante sobre nuestras sucursales y pruebas COVID -19, si deseas agendar o recibir asesoría te invitamos a comunicarte con nosotros',
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment: 'Super emoción!!',
+              createDate: '5hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment: 'ESOOOOO!!!! ',
+              createDate: '7hrs',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 26,
+      idGrupo: 2,
+      name: 'Salud y belleza',
+      picture:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/Avatar.png',
+      profileCover:
+        'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/perfil/portada.jpg',
+      members: '12k',
+      category: 'Productos',
+      type: 'Privado',
+      content: [
+        {
+          id: 6,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/Avatar.png',
+          createDate: '11hrs',
+          name: 'Salud y belleza',
+          likes: 367,
+          videos: [
+            'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/perfil/1.mp4',
+          ],
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment:
+                'Que impresionante, cada carrera tiene un nivel de emoción escalofriante!',
+              createDate: '7hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment:
+                'Cada carrera de checo me ah puesto los nervis de punta!',
+              createDate: '11hrs',
+            },
+          ],
+        },
+        {
+          id: 7,
+          picture:
+          'https://social-network.sicssa-lab.com/assets/mocks/2-Medical-network/grupo/4-Salud-y-belleza/Avatar.png',
+          createDate: '11hrs',
+          name: 'Salud y belleza',
+          likes: 367,
+          videos: [],
+          description:
+            'Se considera saludable un cuerpo que funciona de manera adecuada y se desempeña en un ambiente equilibrado y feliz. Por lo tanto, ambas cosas se reflejan en nuestra apariencia física; un efecto de paz y tranquilidad que los demás observarán como Salud y Belleza.',
+          comments: [
+            {
+              id: 1,
+              userName: 'Victor Plains',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/5556512.png',
+              comment: 'Super emoción!!',
+              createDate: '5hrs',
+            },
+            {
+              id: 2,
+              userName: 'Karianne',
+              picture:
+                'https://social-network.sicssa-lab.com/assets/images/avatars/beautiful-latin-woman-avatar-character-icon-free-vector.jpg',
+              comment: 'ESOOOOO!!!! ',
+              createDate: '7hrs',
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
