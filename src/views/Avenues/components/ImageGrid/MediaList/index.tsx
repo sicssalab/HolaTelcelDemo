@@ -5,7 +5,7 @@ import { FlatList, View, StyleSheet, TouchableOpacity, Image } from 'react-nativ
 import { MaterialIcons } from '@expo/vector-icons';
 import { Video } from 'expo-av';
 
-import { MediaItem } from './types';
+//import { MediaItem } from './types';
 
 // Asegúrate de importar el tipo MediaItem desde tu archivo de tipos
 
@@ -14,7 +14,7 @@ const viewabilityConfig = {
 };
 
 interface MediaListProps {
-  media: MediaItem[];
+  media: any[];
   videoRefs: React.RefObject<Video>[];
   playingVideo: number | null;
   handlePlayIconPress: (index: number) => void;

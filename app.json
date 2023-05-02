@@ -4,7 +4,7 @@
     "name": "Social App - Demo",
     "description": "Social App Demo - Hol@ Telcel",
     "scheme": "social-app",
-    "slug": "social-app-demo",
+    "slug": "holatelceldemo2",
     "icon": "./src/assets/favicon.png",
     "orientation": "default",
     "platforms": [
@@ -28,7 +28,7 @@
       "xxhdpi": "./src/assets/images/splash@3x.png"
     },
     "ios": {
-      "supportsTablet": true,
+      "supportsTablet": false,
       "bundleIdentifier": "mx.psadigital.social"
     },
     "android": {
@@ -61,7 +61,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "06889954-fc70-4de7-9cc2-5f2683685645"
+        "projectId": "1bf0183d-f972-4f3b-bcfc-e468e59c593f"
       }
     },
     "plugins": [
@@ -72,6 +72,6 @@
         }
       ]
     ],
-    "owner": "suanhero"
+    "owner": "wen3"
   }
 }

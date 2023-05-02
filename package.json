@@ -24,7 +24,7 @@
     "@use-expo/font": "^2.0.0",
     "axios": "^0.27.2",
     "color": "^4.2.3",
-    "expo": "^47.0.0",
+    "expo": "~47.0.14",
     "expo-av": "~13.0.3",
     "expo-blur": "~12.0.1",
     "expo-constants": "~14.0.2",
